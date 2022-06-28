@@ -1,0 +1,7 @@
+<!--components/search-header/search-header.wxml-->
+<navigator url='/pages/search/search' class="search">
+  <view class="search-bar">
+    <text class="iconfont icon-sousuo"></text>
+    <text>搜索</text>
+  </view>
+</navigator>

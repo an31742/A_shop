@@ -1,0 +1,43 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{1000}}" circular="{{true}}">
+  <block wx:for="{{ detail.pics }}" wx:key="pics_id">
+    <swiper-item>
+      <image mode='aspectFit' src="{{ item.pics_mid_url }}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- aspectFit 保证长边能展示出来 -->
+<!-- 价格 -->
+<view class="price">¥ {{ detail.goods_price }}</view>
+<!-- 标题部分 -->
+<view class="title">
+  <view class="title-l line2">{{ detail.goods_name }}</view>
+  <view class="title-r">
+    <text class="iconfont icon-wujiaoxingkong"></text>
+    <text>收藏</text>
+  </view>
+</view>
+<!-- 图文详情 -->
+<view class="desc-title">图文详情</view>
+<!-- 图文内容 -->
+<!-- <view>{{ detail.goods_introduce}}</view> -->
+<view class="desc">
+  <rich-text nodes="{{ detail.goods_introduce }}"></rich-text>
+</view>
+<!-- 底部 工具栏 -->
+<view class="tool">
+  <view class="tool1">
+    <text class="iconfont icon-linedesign-20"></text>
+    <text>客服</text>
+  </view>
+  <view class="tool1">
+    <text class="iconfont icon-fenxiang"></text>
+    <text>分享</text>
+  </view>
+  <navigator open-type="switchTab" url="/pages/cart/cart" class="tool1">
+    <text class="iconfont icon-gouwuchekong"></text>
+    <text>购物车</text>
+  </navigator>
+  <view class="tool2" bind:tap="addCart">加入购物车</view>
+  <view class="tool3">立即购买</view>
+</view>

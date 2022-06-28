@@ -1,0 +1,56 @@
+/* pages/category/category.wxss */
+.cates {
+  /* background: pink; */
+  height: calc(100vh - 100rpx); 
+  display: flex;
+}
+.cates .cates-l {
+  flex: 2;
+  /* background: #FFF; */
+}
+.cates .cates-r {
+  flex: 5;
+  /* background: lime; */
+}
+.cates .cates-l .cates-l-item{
+  height: 70rpx;
+  background: #ccc;
+  line-height: 70rpx;
+  text-align: center;
+
+}
+.cates .cates-l .active{
+  background: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-left: 7rpx solid red;
+}
+.cates .cates-r .cates-r-banner{
+   padding: 10rpx;
+}
+.cates .cates-r .cates-r-banner image{
+  width: 100%;
+}
+.cates .cates-r .content .content-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .content-list{
+  display: flex;
+ flex-wrap: wrap;
+}
+ .cates-r-content-item{
+ display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rpx;
+   width: 33.3%;
+   height: 270rpx;
+}
+.cates-r-content-item image{
+   width: 100%;
+}

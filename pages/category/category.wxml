@@ -1,0 +1,30 @@
+<search-header></search-header>
+<view class="cates">
+  <scroll-view  scroll-y="{{true}}" class="cates-l">
+   <block wx:for="{{leftMenusData}}" wx:key="*this">
+    <view class="{{selectIndex===index ?'active':'cates-l-item'}}" bindtap="handLeft" data-index="{{index}}">{{item}}</view>
+   </block>
+  </scroll-view>
+   <scroll-view scroll-y="{{true}}" class="cates-r" >
+     <!-- 右侧条幅 -->
+     <view class="cates-r-banner">
+      <image mode='widthFix' src="../../assets/upload/category_banner@2x.png"></image>
+    </view>
+  
+      <view class="content" wx:for="{{rightMenusData}}" wx:key="{{index}}">
+        <view class="content-title">
+         <text class="line" decode>/&emsp;</text>
+        <text>{{ item.cat_name }}</text>
+        <text class="line" decode>&emsp;/</text>
+        </view>
+        <view class="content-list">
+          <block wx:for="{{ item.children }}" wx:key="cat_id" wx:for-item="it">
+          <navigator url="/pages/goods_list/goods_list?cat_id={{ it.cat_id }}&cat_name={{ it.cat_name }}" class="cates-r-content-item">
+            <image src="{{ it.cat_icon }}"></image>
+            <text>{{ it.cat_name }}</text>
+          </navigator>
+        </block>
+        </view>
+      </view>
+    </scroll-view>
+</view>

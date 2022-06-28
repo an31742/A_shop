@@ -1,0 +1,17 @@
+/* components/tabs/tabs.wxss */
+/* pages/goods_list/goods_list.wxss */
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs-item{
+  background-color: #ccc;
+  flex: 1;
+  height: 70rpx;
+  display: flex;
+ align-items: center;
+justify-content: center;
+}
+.active{
+  border-bottom: 8rpx solid red;
+}

@@ -1,0 +1,82 @@
+/* pages/goods_detail/goods_detail.wxss */
+swiper{
+   width: 750rpx;
+   height: 340rpx;
+}
+swiper image{
+  width: 750rpx;
+  height: 340rpx;
+}
+.price{
+  color: red;
+  font-size: 70rpx;
+}
+.title{
+   border-top: 2px solid #000;
+   border-bottom: 2px solid #000;
+   display: flex;
+   justify-content: space-around;
+}
+.title-l{
+   border-right: 1px solid #ccc;
+}
+.title-r{
+  display: flex;
+  width: 200rpx;
+  text-align: center;
+align-items: center;
+}
+.desc-title{
+  color: red;
+  font-size: 50rpx;
+}
+.desc-title {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  font-size: 38rpx;
+  color: var(--themeColor);
+  font-weight: 700;
+}
+.desc {
+  padding-bottom: 100rpx;
+}
+.tool{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  height: 100rpx;
+  width: 750rpx;
+  justify-content: space-around;
+  background: #fff;
+  align-items: center;
+}
+.tool1{
+  display: flex;
+flex: 1;
+height: 100rpx;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  justify-content: center;
+}
+ .tool2{
+  display: flex;
+  flex: 1.5;
+  height: 100rpx;
+  flex-direction: row;
+  align-items: center;
+justify-content: center;
+  background: orange;
+}
+ .tool3{
+  display: flex;
+  height: 100rpx;
+  flex: 1.5;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: var(--themeColor);
+}

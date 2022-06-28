@@ -1,0 +1,60 @@
+swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+swiper image {
+  width: 750rpx;
+  height: 340rpx;
+}
+.menus{
+  padding: 24rpx 0 29rpx 0;
+  display: flex;
+   background-color: #fff;
+  justify-content: space-around;
+}
+.menus .menus-item image{
+  width: 128rpx;
+  height: 128rpx;
+}
+.floor-title{
+  padding-top: 20rpx;
+  background: #eee;
+}
+.floor-title image {
+  width: 750rpx;
+  height: 59rpx;
+}
+.floor-body {
+  display: flex;
+  padding: 20rpx 16rpx;
+}
+.floor-body-l {
+  margin-right: 10rpx;
+}
+.floor-body-l image {
+  width: 232rpx;
+  height: 386rpx;
+}
+.floor-body-r image {
+  width: 232rpx;
+  height: 188rpx;
+}
+.floor-body-r image:nth-child(2n + 1) {
+  margin-right: 10rpx;
+}
+.floor-body-r image:nth-child(-n + 2) {
+  margin-bottom: 10rpx;
+}
+.top{
+ width: 120rpx;
+ height: 120rpx;
+ background-color: yellow;
+ border-radius: 40px;
+ text-align: center;
+
+ position: fixed;
+ bottom: 60rpx;
+ right: 20rpx;
+ display: flex;
+ flex-direction: column;
+}

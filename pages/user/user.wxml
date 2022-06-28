@@ -1,0 +1,55 @@
+<view class="user">
+  <!-- 有信息 -->
+  <view wx:if="{{ userInfo.nickName  }}" class="user-info">
+    <image mode='aspectFill' class="bg" src="{{ userInfo.avatarUrl }}"></image>
+    <view class="info">
+      <image mode='aspectFill' class="avatar" src="{{ userInfo.avatarUrl }}"></image>
+      <view class="nn">{{ userInfo.nickName }}</view>
+    </view>
+  </view>
+  <!-- 有按钮 -->
+  <view wx:else class="user-btn">
+    <button open-type="getUserInfo" bindgetuserinfo="startLogin">登录</button>
+  </view>
+</view>
+<view class="list">
+  <view class="list1">
+    <view>
+      <text class="num">0</text>
+      <text>收藏的店铺</text>
+    </view>
+    <view>
+      <text class='num'>0</text>
+      <text>收藏的商品</text>
+    </view>
+    <view>
+      <text class='num'>0</text>
+      <text>关注的商品</text>
+    </view>
+    <view>
+      <text class='num'>0</text>
+      <text>我的足迹</text>
+    </view>
+  </view>
+  <view class="order-title">我的订单</view>
+  <view class="list2">
+    <navigator url="/pages/order/order?type=1">全部</navigator>
+    <navigator url="/pages/order/order?type=2">待付款</navigator>
+    <navigator url="/pages/order/order?type=3">待收货</navigator>
+    <navigator url="/pages/order/order?type=4">退款</navigator>
+  </view>
+  <view class="addr">
+    <view>收货地址管理</view>
+  </view>
+  <view class="makeCall" bind:tap="makeCall">
+    <view>联系客服</view>
+    <view>400-618-4000</view>
+  </view>
+  <view class="feedback">
+    <button open-type="feedback">意见反馈</button>
+  </view>
+  <view class="aboutwe">关于我们</view>
+  <view class="share">
+    <button open-type='share'>把应用推荐给其他人</button>
+  </view>
+</view>

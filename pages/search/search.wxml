@@ -1,0 +1,17 @@
+<view class="search">
+  <view class="search-l">
+    <input bindconfirm="clickDone" confirm-type='search' bindinput="handleInput" value="{{ searchText }}" placeholder="请输入内容" type="text" />
+  </view>
+  <view class="search-r" hidden="{{ !isFocus }}">
+    <view bind:tap="clickCancel" class="cancel">取消</view>
+  </view>
+</view>
+<!-- 列表部分 -->
+<view class="list">
+  <block wx:for="{{goods}}" wx:key="goods_id">
+    <!-- <view class="line1">{{ item.goods_name }}</view> -->
+    <navigator url="/pages/detail/detail?goods_id={{ item.goods_id }}" class="line1">
+      {{ item.goods_name }}
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+<!--components/test/test.wxml-->
+<!-- <slot name="n1"></slot>
+<view>我是自定义组件</view>
+<slot name="n2"></slot>
+<view>------------</view>
+<view>{{name}} </view>
+<view>{{obj.desc}}</view>
+<button bindtap="handleUpdate"></button> -->
+<view>zi-----{{msg}}</view>
+<button bindtap="trigger">自触发的事件</button>

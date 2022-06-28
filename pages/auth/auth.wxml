@@ -1,0 +1,4 @@
+<!-- 获取授权 -->
+<button open-type='getUserInfo' bindgetuserinfo="getUserInfo" type="primary" plain="{{true}}">
+  获取授权
+</button>

@@ -1,0 +1,20 @@
+<!--pages/order/order.wxml-->
+<!-- tab栏 -->
+<tab bind:mytap='clickTabs' tabs='{{ tabs }}'></tab>
+<!-- 列表 -->
+<block wx:for="{{ orders_obj[type] }}" wx:key="index">
+  <view class="item">
+    <view class="item1">
+      <text>订单编号</text>
+      <text>{{ item.order_number }}</text>
+    </view>
+    <view class="item1">
+      <text>订单价格</text>
+      <text class="price">¥ {{ item.order_price }}</text>
+    </view>
+    <view class="item1">
+      <text>订单日期</text>
+      <text>{{ item.create_time }}</text>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,18 @@
+<!--pages/goods_list/goods_list.wxml-->
+<search-header></search-header>
+<!-- 字传父第二步设置自定义事件 -->
+<tabs bind:mytap='toggleTab' tabs='{{ tabs }}'></tabs>
+<!-- 内容-综合部分 -->
+<block wx:if="{{ tabs[0].isActive   }}">
+  <block wx:for="{{ list }}" wx:key="goods_id">
+    <goods-item goods='{{ item }}'></goods-item>
+  </block>
+</block>
+<!-- 内容-销量部分 -->
+<block wx:elif="{{ tabs[1].isActive }}">
+  <view>销量部分</view>
+</block>
+<!-- 内容-价格部分 -->
+<block wx:else>
+  <view>价格部分</view>
+</block>

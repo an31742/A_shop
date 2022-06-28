@@ -1,0 +1,51 @@
+<!--pages/cart/cart.wxml-->
+<view class="adderess">
+  <view class="address-but" wx:if="{{!addressDetail.userName}}">
+    <button type="primary" bindtap="clickChooseAddressButton">点击获取地址</button>
+  </view> 
+  <view class="adderess2" wx:else>
+    <view class="adderess2-top">
+      <text>{{addressDetail.userName}}</text>
+      <text>{{addressDetail.telNumber}}</text>
+    </view>
+    <view class="adderess2-buttom">
+      {{addressDetail.addr}}
+    </view>
+  </view>
+</view>
+
+<!-- 购物车标题 -->
+<view class="cart-title">购物车</view>
+<!-- 购物车元素列表 -->
+<view class="carts">
+  <block wx:for="{{ carts }}" wx:key="goods_id">
+    <view class="cart">
+      <view class="cart2">
+        <image mode="widthFix" src="{{ item.goods_small_logo }}"></image>
+      </view>
+      <view class="cart3">
+        <view class="cart3-top line2">{{ item.goods_name }}</view>
+        <view class="cart3-bottom">
+          <view class="price">¥ {{ item.goods_price }}</view>
+          <view class="edit">
+            
+            <view class="num">x{{ item.goods_num }}</view>
+  
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 底部工具 -->
+<view class="tool">
+ 
+  <view class="tool2">
+    <view class="tool2-top">
+      合计:
+      <text>¥ {{ totalPrice }}</text>
+    </view>
+    <view class="tool2-bottom">包含运费</view>
+  </view>
+  <view bind:tap="startPay" class="tool3">支付({{ totalCount }})</view>
+</view>

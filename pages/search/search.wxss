@@ -1,0 +1,47 @@
+page {
+  background: #ddd;
+}
+input {
+  border: 1px solid red;
+}
+.search {
+  height: 100rpx;
+  display: flex;
+}
+.search-l {
+  flex: 4;
+  padding: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-l input {
+  width: 94%;
+  height: 80%;
+  background: #fff;
+  padding-left: 20rpx;
+}
+.search-r {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-r .cancel {
+  background: #fff;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.list {
+  padding: 0 20rpx;
+}
+.list navigator {
+  background: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}

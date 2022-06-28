@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-header" :"/components/search-header/search-header",
+    "tabs":"/components/tabs/tabs",
+    "goods-item":"/components/goods-item/goods-item"
+
+  }
+}

@@ -1,0 +1,4 @@
+/* components/test/test.wxss */
+view{
+  color: red;
+}

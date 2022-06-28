@@ -1,0 +1,4 @@
+function myName(str){
+  return str.slice(0,1)
+}
+module.exports.myName = myName

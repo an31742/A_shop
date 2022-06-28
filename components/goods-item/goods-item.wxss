@@ -1,0 +1,44 @@
+/* components/goods-item/goods-item.wxss */
+.goods {
+  height: 240rpx;
+  background: #fff;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.goods-l {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-l image {
+  width: 85%;
+}
+.goods-r {
+  flex: 2;
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods-r-top {
+  background: #fff;
+  word-break: break-all;
+}
+.goods-r-bottom {
+  background: #fff;
+}
+.goods-r-bottom text {
+  padding-left: 12rpx;
+}
+.goods-r-bottom .price {
+  color: var(--themeColor);
+}
+.line2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

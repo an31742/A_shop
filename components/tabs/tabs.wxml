@@ -1,0 +1,14 @@
+<!--components/tabs/tabs.wxml-->
+<!-- <view class="tabs">
+  <block wx:for="{{tabs}}" wx:key="id">
+    <view class="{{item.isActive ?'active':''}} tabs-item" bindtap="clickTab" data-index="{{item.id}}">{{item.title}}</view>
+  </block>
+</view> -->
+<!-- 组件内部 -->
+<view class="tabs">
+  <block wx:for="{{ tabs }}" wx:key="id">
+    <view  bindtap="clickTab" data-id='{{ item.id }}' class="tabs-item {{ item.isActive ? 'active' :'' }} ">
+      {{ item.title }}
+    </view>
+  </block>
+</view>

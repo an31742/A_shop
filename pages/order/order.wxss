@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.item .item1 {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item .item1 .price {
+  color: var(--themeColor);
+}
